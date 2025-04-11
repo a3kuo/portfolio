@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Contact</title>
 </head>
 <body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html">Projects</a>
+        <a class="current" href="./index.html">Contact</a>
+        <a href="https://github.com/a3kuo" target="_blank">Profile</a>
+        <a href="../resume/index.html">About Me</a>
+    </nav>
     <h1>Contact</h1>
-    <nav><a href="../index.html">Home</a></nav>
-    <nav><a href="../projects/index.html">Projects</a></nav>
-    <nav><a href="./index.html">Contact</a></nav>
-    <nav><a href="https://github.com/a3kuo" target="_blank">Profile</a></nav>
-    <nav><a href="../resume/index.html">About Me</a></nav>
     <form action="mailto:alexanderkuo0614@gmail.com" method="POST" enctype="text/plain">
-        <label>Email: </label><input name="email" type="email">
-        <label>Subject: </label><input name="subject">
-        <label>Message: </label><textarea name="body"></textarea>
+        <label>Email: <input name="email" type="email"></label>
+        <label>Subject: <input name="subject"></label>
+        <label>Message: <textarea name="body"></textarea></label>
         <button type="submit">Submit</button>
     </form>
 </body>
