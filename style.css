@@ -144,11 +144,12 @@ div.wh {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  p {
-    margin: 0;
-    padding: 0;
-    margin-right: 2ch;
-  }
+}
+
+div.wh p {
+  margin: 0;
+  padding: 0;
+  margin-right: 2ch;
 }
 
 ul {
@@ -156,10 +157,11 @@ ul {
   margin-left: 2ch;
   padding: 0;
   list-style-type: "⮚ ";
-  li {
-    margin-right: 1ch;
-  }
 }
+ul li {
+  margin-right: 1ch;
+}
+
 /* 
 * {
     outline: 1px solid red;
