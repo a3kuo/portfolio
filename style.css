@@ -26,6 +26,7 @@ a:hover {
   border-bottom: 4px solid var(--color-accent);
   background-color: oklch(from var(--color-accent) 95% 5% h);
   padding-bottom: 0.2em;
+  color: var(--color-accent);
 }
 
 .current {
@@ -108,7 +109,8 @@ h1.section {
 
 h2 {
   margin: 0;
-  line-height: 1.1
+  line-height: 1.1;
+  color: var(--color-accent);
 }
 
 h3 {
@@ -180,10 +182,15 @@ ul {
   margin-left: 2ch;
   padding: 0;
   list-style-type: "⮚ ";
+
 }
 
 ul li {
   margin-right: 1ch;
+}
+
+ul li::marker {
+  color: var(--color-accent);
 }
 
 /* 
