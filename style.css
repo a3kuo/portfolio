@@ -102,6 +102,10 @@ h1 {
   margin-bottom: 15px;
 }
 
+h1.section {
+  font-size: 250%;
+}
+
 h2 {
   margin: 0;
   line-height: 1.1
@@ -129,7 +133,7 @@ div.cv {
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: auto; 
   column-gap: 2em;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
 }
 
 #top {
@@ -141,6 +145,7 @@ div.cv {
 }
 
 div.wh {
+  margin-top: 1px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -152,12 +157,31 @@ div.wh p {
   margin-right: 2ch;
 }
 
+div.basic {
+  display: flex;
+}
+
+div.basic p {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-right: 3px solid var(--color-accent);
+}
+
+div.basic p.end {
+  border-right: 0px;
+}
+
 ul {
-  margin-top: 0;
+  margin-top: 0.5em;
   margin-left: 2ch;
   padding: 0;
   list-style-type: "⮚ ";
 }
+
 ul li {
   margin-right: 1ch;
 }
