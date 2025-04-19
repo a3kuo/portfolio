@@ -3,10 +3,12 @@ body {
   max-width: 100ch;
   margin-inline: auto;
   padding: 1ch;
+  color-scheme: light dark;
 }
 
 nav {
   display: flex;
+  --border-color: oklch(50% 10% 200 / 40%);
 }
 
 a {
@@ -18,13 +20,13 @@ a {
   margin-bottom: 0.5em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
   font-weight: bold;
 }
 
 a:hover {
   border-bottom: 4px solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 50%);
   padding-bottom: 0.2em;
   color: var(--color-accent);
 }
@@ -191,6 +193,18 @@ ul li {
 
 ul li::marker {
   color: var(--color-accent);
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
+
+#selector{
+  font-family: inherit;
 }
 
 /* 
