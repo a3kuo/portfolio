@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Lab 0: Setup",
+        "year": 2025,
+        "image": "https://dsc106.com/labs/lab00/images/finaldoc.gif",
+        "description": "Setup local environment for rest of the labs. Configured Git and GitHub and installed local server."
+    },
+    {
+        "title": "Lab 1: Introduction to the Web platform",
+        "year": 2025,
+        "image": "https://dsc106.com/labs/lab01/images/screenshots/jie-step7.png",
+        "description": "Learned about webpages and their intricacies. Created HTML pages and used various tags."
+    },
+    {
+        "title": "Lab 2: Styling with CSS",
+        "year": 2025,
+        "image": "https://commandlinefanatic.com/art033f001.png",
+        "description": "Created a CSS stylesheet to target different elements. Customed design aspects for all elements of a webpage."
+    },
+    {
+        "title": "Lab 3: Introduction to JS",
+        "year": 2025,
+        "image": "https://dsc106.com/labs/lab03/images/menu-border-before-after.gif",
+        "description": "Learned JavaScript and what it is used for. Used JS to create new HTML elements and retrieve information from JSON files."
+    },
+    {
+        "title": "Facilis inventore dicta atque!",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Qui neque dignissimos fuga ullam modi quaerat nulla corrupti, molestiae tempore voluptas fugit numquam nobis nam voluptates accusantium quibusdam vel. Debitis explicabo ipsa ullam asperiores repellat ad consequuntur minus perferendis."
+    },
+    {
+        "title": "Totam velit nam amet.",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Officiis beatae molestias quia nam consequuntur animi, laudantium deleniti, soluta fugiat sed veritatis, similique hic! Excepturi nostrum, voluptatum veniam, laboriosam autem iure voluptate voluptatibus commodi vitae labore quod, sint possimus!"
+    },
+    {
+        "title": "Soluta vitae dolorem laborum!",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Saepe temporibus debitis voluptas tenetur rem minus assumenda eveniet similique alias nulla omnis architecto dicta rerum eaque impedit aspernatur, quo perferendis? Facilis explicabo voluptas assumenda expedita dignissimos molestias maxime commodi."
+    },
+    {
+        "title": "Consequatur quas perspiciatis porro.",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aut expedita laboriosam dignissimos id, quas ipsam praesentium distinctio ea quae repellat eius, dolore accusamus facere quidem perspiciatis reprehenderit facilis ad rerum neque. Dolorum ratione fuga ipsam laboriosam quae nemo."
+    },
+    {
+        "title": "Debitis deserunt sint unde!",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Eaque reiciendis autem quis quidem quaerat deserunt provident sunt perspiciatis hic esse, labore libero eum ipsum quae possimus, laboriosam aut iusto asperiores voluptatem totam maxime corrupti laborum? Saepe, deleniti hic?"
+    },
+    {
+        "title": "Similique architecto repellendus enim!",
+        "year": 2022,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ullam fuga ex, doloribus nulla blanditiis perspiciatis eius hic voluptas nobis facilis iste aliquid optio dolores cumque. Nemo magni corporis sunt aliquid vitae. Soluta alias eaque itaque accusamus ducimus aspernatur!"
+    },
+    {
+        "title": "Explicabo animi eaque odio.",
+        "year": 2020,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Minima vitae deleniti cupiditate praesentium aspernatur non excepturi veniam, a odio nostrum dolore, illum magnam cumque explicabo ullam laborum sapiente? Distinctio unde ipsum nihil repellat earum aliquam. Totam, rerum eligendi?"
+    },
+    {
+        "title": "Omnis quia corporis minus.",
+        "year": 2018,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Delectus, esse, praesentium quae blanditiis nostrum maxime libero facilis architecto dignissimos mollitia dicta officia vitae vero quo sequi error rerum molestiae minima eveniet rem, doloremque corrupti voluptatum velit numquam? Porro."
+    }
+]

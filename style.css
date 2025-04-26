@@ -207,7 +207,42 @@ ul li::marker {
   font-family: inherit;
 }
 
-/* 
-* {
+h2.latest {
+  color: black;
+  font-size: 250%;
+}
+
+h2.github {
+  color: black;
+  font-size: 200%
+}
+
+#profile-stats {
+  padding: 4px
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#profile-stats dt {
+  font-weight: bold;
+  color: gray;
+  grid-row: 1;
+}
+
+#profile-stats dd {
+  grid-row: 2; 
+  font-size: 200%;
+  margin-left: 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* * {
     outline: 1px solid red;
   }  */

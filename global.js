@@ -27,7 +27,7 @@ document.body.prepend(nav);
 
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  // Local server
-  : "/website/"; 
+  : "/portfolio/"; 
 
 
 
@@ -72,4 +72,44 @@ select.addEventListener('input', function (event) {
 if (("colorScheme") in localStorage) {
     select.value = localStorage.colorScheme;
     document.documentElement.style.setProperty('color-scheme', select.value);
+}
+
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+    console.log(response)
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+    // Your code will go here
+    containerElement.innerHTML = '';
+    const projectCount = document.querySelector('.projects-title');
+    if (projectCount) {
+      projectCount.textContent = `${projects.length} Projects`
+    }
+
+    for (let i = 0; i < projects.length; i++) {
+      const project = projects[i];
+        const article = document.createElement('article');
+        article.innerHTML = `
+            <${headingLevel}>${project.title}</${headingLevel}>
+            <img src="${project.image}" alt="${project.title}">
+            <p>${project.description}</p>
+        `;
+        containerElement.appendChild(article);
+    } 
+  }
+
+export async function fetchGitHubData(username) {
+  // return statement here
+  return fetchJSON(`https://api.github.com/users/${username}`);
 }
