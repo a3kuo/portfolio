@@ -242,6 +242,86 @@ img {
   width: 100%;
 }
 
+p.year {
+  font-family: Bakersville;
+  font-variant-numeric: oldstyle-nums;
+}
+
+ul.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+  min-width: 1ch;
+  border: solid black;
+  border-width: 1px;
+  padding: 1em;
+  align-items: center;
+}
+
+li.legends {
+  display: flex;
+  flex: 1;
+  gap: 2px;
+  align-items: center;
+}
+
+li.legends.selected span.swatch {
+  --color: oklch(60% 45% 0) !important;
+} 
+
+span.swatch {
+  align-items: center;
+  gap: 10ch;
+  width: 2ch;
+  height: 2ch;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5ch;
+}
+
+div.container {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+svg {
+  max-width: 400px; 
+  max-height: 400px;
+  height: auto;
+  flex-shrink: 1;
+}
+
+input.searchBar {
+  display: flex;
+  flex: 1;
+  font-size: 150%;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+  & span {
+    background-color: oklch(60% 45% 0) !important;
+  }
+  &:is(path) {
+    fill: var(--color);
+  }
+}
 
 /* * {
     outline: 1px solid red;
