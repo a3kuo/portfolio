@@ -286,7 +286,7 @@ div.container {
   flex-wrap: wrap;
 }
 
-svg {
+#projects-plot {
   max-width: 400px; 
   max-height: 400px;
   height: auto;
@@ -323,6 +323,82 @@ path {
   }
 }
 
+.stats {
+  padding: 2px
+}
+
+dl.stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.stats dt {
+  font-weight: bold;
+  color: gray;
+  grid-row: 1;
+}
+
+.stats dd {
+  grid-row: 2; 
+  font-size: 200%;
+  margin-left: 0;
+}
+
+.gridlines {
+  stroke-opacity: 0.2;
+}
+
+dl.info {
+  display: grid;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+  background-color: lightgray;
+}
+
+dl.info dt {
+  font-weight: bold;
+  color: darkgray;
+  grid-row: 1;
+}
+
+dl.info dd {
+  grid-row: 2; 
+  font-size: 200%;
+  margin-left: 0;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+#language-container {
+  min-height: 15ch;
+}
 /* * {
     outline: 1px solid red;
   }  */

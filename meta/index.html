@@ -9,6 +9,27 @@
 <body>
     <script type="module" src="../global.js"></script>
     <h1>Meta</h1>
-    <p>Stats about the code of the website</p>
+    <h2>Website Stats</h2>
+    <script type="module" src="./main.js"></script>
+    <div id="stats"></div>
+    <br>
+    <h2>Commits by time of day</h2>
+    <br>
+    <div id="chart"></div>
+    <dl id="commit-tooltip" class="info tooltip" hidden>
+        <dt>Commit</dt>
+        <dd>
+            <a href="" id="commit-link" target="_blank"></a>
+        </dd>
+    
+        <dt>Date</dt>
+        <dd id="commit-date"></dd>
+  
+    <!-- Add: Time, author, lines edited -->
+  </dl>
+  <p id="selection-count">No commits selected</p>
+  <div id="language-container">
+    <dl id="language-breakdown" class="stats"></dl>
+  </div>
 </body>
 </html>
