@@ -19,7 +19,8 @@ let pages = [
     { url: 'projects/', title: 'Projects' },
     { url: 'contact/', title: 'Contact' },
     { url: 'https://github.com/a3kuo', title: 'Profile'},
-    { url: 'resume/', title: 'Resume' }
+    { url: 'resume/', title: 'Resume' },
+    { url: 'meta/', title: 'Meta'}
   ];
 
 let nav = document.createElement('nav');

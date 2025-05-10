@@ -105,15 +105,15 @@ let query = '';
 let searchInput = document.querySelector('.searchBar');
 searchInput.addEventListener('change', (event) => {
  
-  query = event.target.value;
+    query = event.target.value;
   
-  let filteredProjects = projects.filter((project) => {
+    let filteredProjects = projects.filter((project) => {
     let values = Object.values(project).join('\n').toLowerCase();
     return values.includes(query.toLowerCase());
-  });
+    });
  
-  renderProjects(filteredProjects, projectsContainer, 'h2');
-  let newSVG = d3.select('svg');
-  newSVG.selectAll('path').remove();
-  renderPieChart(filteredProjects);
+    renderProjects(filteredProjects, projectsContainer, 'h2');
+    let newSVG = d3.select('svg');
+    newSVG.selectAll('path').remove();
+    renderPieChart(filteredProjects);
 });
