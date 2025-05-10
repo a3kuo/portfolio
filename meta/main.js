@@ -21,7 +21,7 @@ function processCommits(data) {
             let { author, date, time, timezone, datetime } = first;
             let ret = {
                 id: commit,
-                url: 'https://github.com/vis-society/lab-7/commit/' + commit,
+                url: 'https://github.com/a3kuo/portfolio/commit/' + commit,
                 author,
                 date,
                 time,
@@ -33,8 +33,6 @@ function processCommits(data) {
   
         Object.defineProperty(ret, 'lines', {
             value: lines,
-            // What other options do we need to set?
-            // Hint: look up configurable, writable, and enumerable
             configurable: true,
             writable: true,
             enumerable: false
@@ -43,6 +41,7 @@ function processCommits(data) {
         return ret;
     });
 }
+
 function renderCommitInfo(data, commits) {
     // Create the dl element
     const dl = d3.select('#stats').append('dl').attr('class', 'stats');
@@ -174,6 +173,9 @@ renderScatterPlot(data, commits);
 function renderTooltipContent(commit) {
     const link = document.getElementById('commit-link');
     const date = document.getElementById('commit-date');
+    const time = document.getElementById('commit-time');
+    const author = document.getElementById('commit-author');
+    const lines = document.getElementById('commit-lines')
   
     if (Object.keys(commit).length === 0) return;
   
@@ -182,6 +184,9 @@ function renderTooltipContent(commit) {
     date.textContent = commit.datetime?.toLocaleString('en', {
       dateStyle: 'full',
     });
+    time.textContent = commit.time;
+    author.textContent = commit.author;
+    lines.textContent = commit.lines.length
 }
 
 function updateTooltipVisibility(isVisible) {
