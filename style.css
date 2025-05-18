@@ -416,6 +416,21 @@ circle.selected {
 #language-container {
   min-height: 15ch;
 }
+
+.url {
+  width: 100%;
+  font-size: 120%;
+  border-bottom: 0;
+  padding: 0.5em;
+}
+
+.url:hover {
+  border: 0;
+  padding: 0.5em;
+}
+
+
+
 /* * {
     outline: 1px solid red;
   }  */

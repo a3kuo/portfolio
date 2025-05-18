@@ -97,15 +97,17 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     if (projectCount) {
       projectCount.textContent = `${projects.length} Projects`
     }
+    
 
     for (let i = 0; i < projects.length; i++) {
       const project = projects[i];
+        const url = project.url ? `<a class="url" href="${project.url}" target="_blank">Visit</a>` : '';
         const article = document.createElement('article');
         article.innerHTML = `
             <${headingLevel}>${project.title}</${headingLevel}>
             <img src="${project.image}" alt="${project.title}">
             <p>${project.description}</p>
-            <p class="year">c. ${project.year}</p>
+            <p class="year">c. ${project.year} ${url}</p>
         `;
         containerElement.appendChild(article);
     } 

@@ -1,5 +1,12 @@
 [
     {
+        "title": "Bikewatching",
+        "year": 2025,
+        "image": "../images/brakedancer_project.png",
+        "description": "Displayed bike stations on a map, filtering by time. Shows arrivals and departures while dynamically updating the map.",
+        "url": "https://a3kuo.github.io/brakedancer/"
+    },
+    {
         "title": "Lab 0: Setup",
         "year": 2025,
         "image": "https://dsc106.com/labs/lab00/images/finaldoc.gif",
