@@ -413,6 +413,19 @@ circle.selected {
   fill: #ff6b6b;
 }
 
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+  @starting-style {
+    r: 0;
+  }
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
 #language-container {
   min-height: 15ch;
 }
@@ -427,6 +440,16 @@ circle.selected {
 .url:hover {
   border: 0;
   padding: 0.5em;
+}
+
+#slider {
+  display: flexbox;
+  align-items: baseline;
+  margin-top: 1em;
+}
+
+#slider-time  {
+  margin-left: auto;
 }
 
 
